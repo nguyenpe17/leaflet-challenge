@@ -50,7 +50,7 @@ d3.json(queryUrl, function(data) {
       return "#98ee00";
     }
   }
-  // set radiuss from magnitude
+  // set radius from magnitude
     function getRadius(magnitude) {
     if (magnitude === 0) {
       return 1;
@@ -60,7 +60,7 @@ d3.json(queryUrl, function(data) {
   }
     // GeoJSON layer
     L.geoJson(data, {
-      // Maken cricles
+      // creating cricles
       pointToLayer: function(feature, latlng) {
         return L.circleMarker(latlng);
       },
@@ -72,12 +72,12 @@ d3.json(queryUrl, function(data) {
       }
     }).addTo(myMap);
   
-    // an object legend
+    // create legend
     var legend = L.control({
       position: "bottomright"
     });
   
-    // details for the legend
+    // legend details
     legend.onAdd = function() {
       var div = L.DomUtil.create("div", "info legend");
   
@@ -91,7 +91,7 @@ d3.json(queryUrl, function(data) {
         "#ea2c2c"
       ];
   
-      // Looping through
+      // Loop through
       for (var i = 0; i < grades.length; i++) {
         div.innerHTML +=
           "<i style='background: " + colors[i] + "'></i> " +
@@ -100,6 +100,6 @@ d3.json(queryUrl, function(data) {
       return div;
     };
   
-    // Finally, we our legend to the map.
+    
     legend.addTo(myMap);
   });
