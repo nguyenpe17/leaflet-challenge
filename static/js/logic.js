@@ -13,7 +13,7 @@ L.tileLayer("https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
   attribution: "© <a href='https://www.mapbox.com/about/maps/'>Mapbox</a> © <a href='http://www.openstreetmap.org/copyright'>OpenStreetMap</a> <strong><a href='https://www.mapbox.com/map-feedback/' target='_blank'>Improve this map</a></strong>",
   tileSize: 512,
   maxZoom: 18,
-  id: "mapbox/streets",
+  id: "mapbox/streets-v11",
   accessToken: "pk.eyJ1Ijoibmd1eWVucGUxNyIsImEiOiJja2N6YXd2cDAwMTBqMnpwOTVzMnJheXR2In0.aQmpRVoShQqE8eQn7ersNg"
 }).addTo(myMap);
 
