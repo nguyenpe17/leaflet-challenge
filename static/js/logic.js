@@ -1,10 +1,11 @@
 // Creating our initial map object
 // We set the longitude, latitude, and the starting zoom level for sf
 // This gets inserted into the div with an id of 'map' in index.html
-//var myMap = L.map("map", {
- // center: [,],
- // zoom: 
-// });
+
+var myMap = L.map("map", {
+center: [40,-100],
+ zoom: 1
+}
 
 // Adding a tile layer (the background map image) to our map
 // We use the addTo method to add objects to our map
