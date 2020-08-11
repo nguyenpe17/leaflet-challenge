@@ -3,7 +3,7 @@
 // This gets inserted into the div with an id of 'map' in index.html
 
 var myMap = L.map("map", {
-center: [38, -122],
+center: [40, -100],
  zoom: 1
 })
 
@@ -18,7 +18,6 @@ L.tileLayer("https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
 }).addTo(myMap);
 
 // Store our API endpoint
-// var queryUrl = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson";
  var queryUrl = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/significant_month.geojson";
 
 //  GET color radius call to the query URL
