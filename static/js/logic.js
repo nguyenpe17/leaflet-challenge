@@ -5,7 +5,7 @@
 var myMap = L.map("map", {
 center: [40,-100],
  zoom: 1
-}
+})
 
 // Adding a tile layer (the background map image) to our map
 // We use the addTo method to add objects to our map
